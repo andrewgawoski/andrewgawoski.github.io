@@ -80,7 +80,7 @@
         <div class="row">
 
             <div class="col-md-8">
-                <img class="img-responsive" src="http://placehold.it/750x500" alt="">
+                <img class="img-responsive" id="bigImage" src="images/summonerTimersBig1.jpg" alt="">
             </div>
 
             <div class="col-md-4">
@@ -104,27 +104,19 @@
             <hr>
 
             <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
-                </a>
+                    <img class="img-responsive portfolio-item" id="thumb1" src="images/summonerTimersSmall1.jpg" alt="">
             </div>
 
             <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
-                </a>
+                    <img class="img-responsive portfolio-item" id="thumb2" src="images/summonerTimersSmall2.jpg" alt="">
             </div>
 
             <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
-                </a>
+                    <img class="img-responsive portfolio-item" id="thumb3" src="images/summonerTimersSmall3.jpg" alt="">
             </div>
 
             <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
-                </a>
+                    <img class="img-responsive portfolio-item" id="thumb4" src="images/summonerTimersSmall4.jpg" alt="">
             </div>
 
         </div>
@@ -172,6 +164,46 @@
         $("#wrapper").toggleClass("toggled");
     });
     </script>
+	
+	<!-- Thumbnail 1 -->
+	<script>
+		$('#thumb1').click(function(){
+		//event.preventDefault(); //Prevent following the link
+		document.getElementById('bigImage').src='images/summonerTimersBig1.jpg';
+		});
+	</script>
+	
+	<!-- Thumbnail 2 -->
+	<script>
+		$('#thumb2').click(function(){
+		//event.preventDefault(); //Prevent following the link
+		document.getElementById('bigImage').src='images/summonerTimersBig2.jpg';
+		});
+	</script>
+	
+	<!-- Thumbnail 3 -->
+	<script>
+		$('#thumb3').click(function(){
+		//event.preventDefault(); //Prevent following the link
+		document.getElementById('bigImage').src='images/summonerTimersBig3.jpg';
+		});
+	</script>
+	
+	<!-- Thumbnail 4 -->
+	<script>
+		$('#thumb4').click(function(){
+		//event.preventDefault(); //Prevent following the link
+		document.getElementById('bigImage').src='images/summonerTimersBig4.jpg';
+		});
+	</script>
+	
+	<!-- Make thumbnails appear clickable -->
+	<script>
+	document.getElementById('thumb1').style.cursor = "pointer";
+	document.getElementById('thumb2').style.cursor = "pointer";
+	document.getElementById('thumb3').style.cursor = "pointer";
+	document.getElementById('thumb4').style.cursor = "pointer";
+	</script>
 
 </body>
 
