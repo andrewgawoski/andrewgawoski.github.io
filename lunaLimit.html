@@ -93,7 +93,10 @@
                     <li>Rack up score multipliers</li>
                     <li>Large number of different game boards</li>
                 </ul>
-            </div>
+				<p>
+				<a class="btn btn-dark" href="https://github.com/andrewgawoski/luna-limit">View Source <span class="glyphicon glyphicon-chevron-right"></span></a>
+				</p>
+			</div>
 
         </div>
         <!-- /.row -->
@@ -126,9 +129,9 @@
 		<div class="row">
 		<hr>
 			<div class="col-lg-12">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet pretium neque sit amet euismod. Suspendisse velit enim, accumsan sed ultrices sed, luctus vitae arcu. Sed dictum odio et turpis fringilla, nec rhoncus felis feugiat. Etiam ut pretium odio. Nam a tellus lorem. Ut condimentum sit amet ante id vulputate. Praesent tellus velit, lacinia vulputate purus in, tristique bibendum diam.</p>
-                <p>In quis dui finibus, aliquam quam et, semper augue. Cras quam enim, consequat sit amet eros quis, vehicula congue massa. Vestibulum vitae lacus nec sem feugiat posuere. Aenean efficitur pulvinar euismod. Nulla eget malesuada odio, vel tempor mauris. Phasellus eu ipsum velit. Aliquam viverra molestie risus eu scelerisque. Nunc vitae est aliquam, luctus libero a, commodo arcu. Nulla rutrum orci non tristique faucibus. Vivamus tristique euismod felis vel pharetra. In finibus augue non turpis aliquet consequat. Pellentesque elit risus, ornare id erat tristique, euismod tincidunt ante. Aliquam cursus dapibus sapien a tincidunt. Vestibulum sodales dui in diam sagittis, non ullamcorper risus venenatis. Phasellus viverra leo id ipsum ullamcorper pharetra.</p>
-                <p>Mauris ultricies tortor vel lectus tincidunt, nec bibendum ex varius. Vestibulum vel magna nec lectus cursus mollis. Cras felis lectus, laoreet sed enim id, vehicula varius quam. Vestibulum eu volutpat lorem, non elementum felis. Sed a eros est. Praesent sollicitudin mattis arcu, nec pharetra nunc ultricies vitae. Praesent vitae suscipit diam, dictum pharetra felis. Donec semper leo lacinia, commodo augue quis, pretium lectus. In hac habitasse platea dictumst. Praesent at urna eget elit laoreet aliquam. Ut sed placerat enim, ac ullamcorper quam. Cras nec nisi euismod, pharetra dolor eu, tempus neque. Duis vel fringilla purus.</p>
+				<p style="text-indent: 30px">With the goal of creating a simple and intuitive game that would encourage more casual pick-up and play mentality, Luna Limit focused nearly entirely on moon phases and how intuitive mechanics based on them would be. Early on, this was prototyped using numbers ranging between -6 and 7, allowing for continuous addition of numbers with the player goal of reaching certain numbers: 7 and to a lesser extent 0. Functionally, mechanically, everything worked. As a solo dev, I was using the project to refamiliarize myself with Unity’s workflow and I was very successful in that sense. I took the opportunity to organize my tasks in an agile manner similar to scrum, something easily reusable for future projects. Asset creation was simple and completed early on in the development process.</p>
+                <p style="text-indent: 30px">However, the assets themselves created the issue leading to Luna Limit’s end and cancellation. Despite creating the mechanic myself, once I implemented the lunar phase sprites for the tile prefabs, I discovered just how unintuitive adding phases of the moon could be. While adding small slivers of white together to create larger slivers makes a lot of sense, it was not intuitive when the phases of the moon rolled over to progress to a new moon and white and black were added together to create even larger quantities of black. Branching the game to a state where numbers existed instead of moon sprites, I confirmed the source of the difficulty and was left with a killer problem. If the number value of the tiles cannot progress past 7 to the point where you progress towards a new moon, there is no longer enough challenge in the game to hold interest. If things stay as they are, the game is too confusing to be played effectively. If the moon sprites are removed, all that remains is a fairly plain game with numbered tiles that doesn’t have any other appeal.</p>
+                <p style="text-indent: 30px">It’s better to look at Luna Limit as an experiment looking to discover if moon-phase addition was an intuitive mechanic. At least in this implementation, I found the driving mechanic for this game’s creation to be unintuitive, and have ceased work on it. For the purpose of learning, sharing and other forms of curiosity, I’ve provided the game as is under MIT license.</p>
 			</div>
 		</div>
 		
