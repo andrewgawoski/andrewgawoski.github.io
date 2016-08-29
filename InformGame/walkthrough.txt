@@ -1,0 +1,119 @@
+This is a story where you can swap perspective by typing "swap" at any point.
+
+SubstiLoot
+An Interactive Fiction by Anthony Maddalon, Andrew Gawoski
+Release 1 / Serial number 150605 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
+
+B1
+The room you began your adventure in. There is a square archway to the north. The exit is to the south.
+
+You can see Bors here.
+
+>n
+
+B1
+A room containing a few broken pots. You can feel a slight breeze coming from the south. The north wall has an intricate mosaic on it with a socket in the center above an old metal door. There is also a square archway to the south, a round archway to the west, and a plain archway to the east.
+
+You can see a pot here.
+
+>e
+
+B1
+A room with a particularly sturdy-feeling floor. There is a plain archway to the west.
+
+You can see a small brass key here.
+
+>take key
+Taken.
+
+>w
+
+B1
+A room containing a few broken pots. You can feel a slight breeze coming from the south. The north wall has an intricate mosaic on it with a socket in the center above an old metal door. There is also a square archway to the south, a round archway to the west, and a plain archway to the east.
+
+You can see a pot here.
+
+>w
+
+B1
+A room with a slightly noticeable, but mostly inaudible echo. There is a brass-inlaid door to the north and a round archway to the east.
+
+You can see a socket-shaped gem here.
+
+>n
+You insert the small brass key into the door and unlock it. Unfortunately, it breaks off in the keyhole.
+
+The brass-inlaid door opens with ease.
+
+B1
+A room with pools of water seeping into cracks in the stone floor. There is a brass-inlaid door to the south.
+
+You can see a small walnut key here.
+
+>press pressure plate
+You stand on the pressure plate.
+
+>swap
+You feel your perspective changing to that of Bors!
+
+B1
+The room you began your adventure in. There is a square archway to the north. The exit is to the south.
+
+>n
+
+B1
+A room containing a few broken pots. You can feel a slight breeze coming from the south. The north wall has an intricate mosaic on it with a socket in the center above an old metal door. There is also a square archway to the south, a round archway to the west, and a plain archway to the east.
+
+You can see a pot here.
+
+>w
+
+B1
+A room with a slightly noticeable, but mostly inaudible echo. There is a brass-inlaid door to the north and a round archway to the east.
+
+You can see a socket-shaped gem here.
+
+>take gem
+Taken.
+
+>e
+
+B1
+A room containing a few broken pots. You can feel a slight breeze coming from the south. The north wall has an intricate mosaic on it with a socket in the center above an old metal door. There is also a square archway to the south, a round archway to the west, and a plain archway to the east.
+
+You can see a pot here.
+
+>insert gem into mosaic
+You put the socket-shaped gem into the socketed wall mosaic.
+
+>n
+The old metal door opens enough for you to get through.
+
+B1
+A room with stairs descending into darkness. There is an old metal door to the south.
+
+>d
+
+B2
+A room with stairs ascending into light. There is a walnut door to the north, a round archway to the west, a square archway to the south and a tall shiny door to the east.
+
+You can see a walnut door here.
+
+>e
+PH2
+B2
+A room that makes you feel a bit dizzy. There is a tall shiny door to the west, an ornate golden door to the south, and a small crack in the wall to the east. It doesn't look like you can fit through from this side.
+
+>s
+PH2
+B2
+A room overflowing with riches. There is an ornate golden door to the north.
+
+
+
+    *** You made it to the treasure room only to find it empty. Fortunately, you both decide to take the golden door off its hinges and take it home with you when you leave. Alls well that ends well. ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+> 
