@@ -113,10 +113,11 @@
 								<div class="col-sm-1">
 									<p align="center"><a href="#12-10-16">12/10/16</a></p>
 								</div>
-								<!--
+								
 								<div class="col-sm-1">
-									<p align="center"><a href="#12-14-16">12/14/16</a></p>
+									<p align="center"><a href="#12-13-16">12/13/16</a></p>
 								</div>
+								<!--
 								<div class="col-sm-1">
 									<p align="center"><a href="#12-18-16">12/18/16</a></p>
 								</div>
@@ -142,13 +143,14 @@
 							<p style="text-indent: 30px">Lorem Ipsum etc</p>
 							</div>
 							
-							<div class="row">
-							<a name="12-14-16"></a>
-							<h4 align="left" style = "text-indent: 15px"><i>Saturday, December 14th, 2016</i></h4>
-							<p style="text-indent: 30px">Lorem Ipsum etc</p>
-							</div>
-							
 							-->
+							
+							<div class="row">
+							<a name="12-13-16"></a>
+							<h4 align="left" style = "text-indent: 15px"><i>Saturday, December 13th, 2016</i></h4>
+							<p style="text-indent: 30px">Last post I talked a little about search indexing. Today, I'm hoping I might drive a little more traffic here while helping some other developers out. The other day, I was working with code using Unity's particle systems (Shuriken in Unity 5.3.5), and wanted to manipulate specific properties of the system during runtime with code. In particular, Perdix has an involved wind system/mechanics which I would like to affect various two-dimensional particle effects such as leaves, snow, and ash. I won't go into the specifics of setting up the system itself to use 2D assets for a 2D game, as that question is answered in a number of other places and isn't very difficult to solve with the provided documentation. In my case, I wanted to modify the "Velocity over lifetime" module of the particle system. I'm also using C# for this.</p>
+							<p style="text-indent: 30px">Somewhat obviously, I had created a new C# script with a class inheriting from monobehavior to be attached to the particle system game object in the scene. In this class, I'd created a private ParticleSystem datamember, which I set to a reference of the object's ParticleSystem component using the GetComponent method within the class's start method. Now that I have my particle system reference, within the update method for the class, I've created a new datamember set to that particle system's velocityOverLifetime property. I've made sure that the new datamember is enabled before modifying it, which will modify the existing particle system. I set the datamember's x and y components individually to new ParticleSystem.MinMaxCurve(), which has a number of different arguments that can be passed. In addition to using an actively updating Vector2 from elsewhere in my game to represent the wind speed, which I multiply by an arbitrary coefficient before using it as an argument for the MinMaxCurve constructor, I also have a small displacement float variable. I have the value based on the wind Vector2 in both of the arguments for my MinMaxCurve constructor, but I subtract that displacement from the first and add it to the second to create small amounts of randomness in the falling snow particles I've created. It drifts left and right, as I've done this for the x component of particle velocity, and its really a nice effect. </p>
+							</div>
 							
 							<div class="row">
 							<a name="12-10-16"></a>
