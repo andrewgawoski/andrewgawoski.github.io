@@ -110,17 +110,19 @@
 							</div>
 							<!-- Day navigation -->
 							<div class="row">
-								<div class="col-sm-1">
+								<div class="col-sm-2">
 									<p align="center"><a href="#12-10-16">12/10/16</a></p>
 								</div>
 								
-								<div class="col-sm-1">
+								<div class="col-sm-2">
 									<p align="center"><a href="#12-13-16">12/13/16</a></p>
 								</div>
-								<!--
-								<div class="col-sm-1">
-									<p align="center"><a href="#12-18-16">12/18/16</a></p>
+								
+								<div class="col-sm-2">
+									<p align="center"><a href="#12-22-16">12/22/16</a></p>
 								</div>
+								
+								<!--
 								<div class="col-sm-1">
 									<p align="center"><a href="#12-22-16">12/22/16</a></p>
 								</div>
@@ -137,13 +139,17 @@
 							<p style="text-indent: 30px">Lorem Ipsum etc</p>
 							</div>
 							
+							-->
+							
 							<div class="row">
-							<a name="12-18-16"></a>
-							<h4 align="left" style = "text-indent: 15px"><i>Saturday, December 18th, 2016</i></h4>
-							<p style="text-indent: 30px">Lorem Ipsum etc</p>
+							<a name="12-22-16"></a>
+							<h4 align="left" style = "text-indent: 15px"><i>Thursday, December 22nd, 2016</i></h4>
+							<p style="text-indent: 30px">While I haven't been keeping my development schedule tied to dedicated sprints, I'm going to try to write something here about once a week. It isn't so much that I think many folks will end up visiting this page in particular, but that I might be able to archive these posts when I move the devblog to a more fitting platform (eventually). Its been a long week and half now working with Unity's Shaderlab and Nvidia's CG. It has been challenging.</p>
+							<p style="text-indent: 30px">Earlier today, however, I made a huge breakthrough and wrote a shader that appears to work "<i>perfectly</i>." This was in large part due to <a href="https://www.youtube.com/watch?v=zJxxXjoZE30&index=1&list=PLV4HCa5XqFT02gZOZ_Jb_A66wqDhZMCkN">a detailed shader tutorial series</a> on Youtube by Unitycookie (now CG Cookie). I thought it was a little on the lengthy-side, and the earlier parts are definitely geared towards less experienced programmers, but it covered a lot of structure which I couldn't find solid documentation on. In hindsight again, I might have had better luck looking through Nvidia's CG documentation compared to documentation specific to Unity, my issue being the procedural nature of using pragma to declare certain functions as the vertex and fragment functions. Once I knew that those functions were being run, and to an extent how they were being run, I dropped the series to try writing the shader again. I found success almost immediately.</p>
+							<p style="text-indent: 30px">A shader (for sprites currently) for "Unmoving Plaid." That particular effect hasn't been used that frequently in games, particularly modern titles, with the most notable example of it being Stan's shirt in the Monkey Island series of games. I'm still not proficient enough at writing shaders to claim that it will work on all platforms, or that its particularly efficient. However, it should be easy to adjust the shader to work with 3D game objects as well. The only snag is that the effect requires a second texture as large as the entire screen, or some other form of trickery. Early testing has created some important design questions because the effect is currently incredibly striking and vibrant. Coincidentally, a recently released indie title called Botolo uses the effect. I can't speak for exactly how the effect is implemented in Botolo, but I'm happy that other folks appreciate this sort of aesthetic choice as well.</p>
+							<p style="text-indent: 30px">This was one of the last major core-design items I'd need completed before I show anything about Perdix off. I wanted a beautiful, surprising visual effect that my friends, family and colleagues would remember. Hopefully I'll be sharing how the game looks soon enough.</p>
 							</div>
 							
-							-->
 							
 							<div class="row">
 							<a name="12-13-16"></a>
