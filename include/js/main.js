@@ -77,10 +77,10 @@ BRUSHED.slider = function(){
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-            { image: '_include/img/slider-images/image01.jpg', title: '<div class="slide-content"><img src="_include/img/headerImage.png"></div>', thumb : '', url : ''},
-            { image: '_include/img/slider-images/image02.jpg', title: '<div class="slide-content"><img src="_include/img/headerImage.png"></div>', thumb : '', url : ''},
-            { image: '_include/img/slider-images/image03.jpg', title: '<div class="slide-content"><img src="_include/img/headerImage.png"></div>', thumb : '', url : ''},
-            { image: '_include/img/slider-images/image04.jpg', title: '<div class="slide-content"><img src="_include/img/headerImage.png"></div>', thumb : '', url : ''}  
+            { image: 'include/img/slider-images/image01.jpg', title: '<div class="slide-content"><img src="include/img/headerImage.png"></div>', thumb : '', url : ''},
+            { image: 'include/img/slider-images/image02.jpg', title: '<div class="slide-content"><img src="include/img/headerImage.png"></div>', thumb : '', url : ''},
+            { image: 'include/img/slider-images/image03.jpg', title: '<div class="slide-content"><img src="include/img/headerImage.png"></div>', thumb : '', url : ''},
+            { image: 'include/img/slider-images/image04.jpg', title: '<div class="slide-content"><img src="include/img/headerImage.png"></div>', thumb : '', url : ''}  
 									],
 									
 		// Theme Options			   
@@ -254,6 +254,7 @@ BRUSHED.fancyBox = function(){
    Contact Form
 ================================================== */
 
+    /*
 BRUSHED.contactForm = function(){
 	$("#contact-submit").on('click',function() {
 		$contact_form = $('#contact-form');
@@ -262,7 +263,7 @@ BRUSHED.contactForm = function(){
 		
 		$.ajax({
 			type: "POST",
-			url: "_include/php/contact.php",
+			url: "include/php/contact.php",
 			data: fields,
 			dataType: 'json',
 			success: function(response) {
@@ -277,19 +278,19 @@ BRUSHED.contactForm = function(){
 		});
 		return false;
 	});
-}
+}*/
 
 
 /* ==================================================
    Twitter Feed
 ================================================== */
-
+    /*
 BRUSHED.tweetFeed = function(){
 	
 	var valueTop = -64; // Margin Top Value
 	
     $("#ticker").tweet({
-          modpath: '_include/js/twitter/',
+          modpath: 'include/js/twitter/',
           username: "Bluxart", // Change this with YOUR ID
           page: 1,
           avatar_size: 0,
@@ -311,7 +312,7 @@ BRUSHED.tweetFeed = function(){
 	});
 	
 }
-
+    */
 
 /* ==================================================
    Menu Highlight
@@ -472,7 +473,7 @@ $(document).ready(function(){
 	Modernizr.load([
 	{
 		test: Modernizr.placeholder,
-		nope: '_include/js/placeholder.js', 
+		nope: 'include/js/placeholder.js', 
 		complete : function() {
 				if (!Modernizr.placeholder) {
 						Placeholders.init({
