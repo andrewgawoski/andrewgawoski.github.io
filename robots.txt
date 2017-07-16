@@ -1,3 +1,0 @@
-# You shall not pass!
-User-agent: *
-Disallow: /
