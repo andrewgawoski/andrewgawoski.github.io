@@ -12,6 +12,30 @@ a.aboutLink:hover{
     opacity: 0.75;
 }
 
+.ag-dark-blue {
+	background-color: #3500D3 !important;
+}
+
+.ag-dark-blue-text {
+	color: #3500D3 !important;
+}
+
+.ag-blue-violet {
+	background-color: #190061 !important;
+}
+
+.ag-blue-violet-text {
+	color: #190061 !important;
+}
+
+.ag-dark-grey {
+	background-color: #282828 !important;
+}
+
+.ag-dark-grey-text {
+	color: #282828 !important;
+}
+
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -2168,6 +2192,13 @@ html {
  */
 body {
   margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 /* HTML5 display definitions
@@ -2872,7 +2903,7 @@ ul.staggered-list li {
 
 .page-footer {
   padding-top: 20px;
-  background-color: #ee6e73;
+  background-color: #282828;
 }
 
 .page-footer .footer-copyright {
@@ -4192,7 +4223,7 @@ nav ul a span.badge {
 
 nav {
   color: #fff;
-  background-color: #ee6e73;
+  background-color: #282828;
   width: 100%;
   height: 56px;
   line-height: 56px;
@@ -4313,7 +4344,8 @@ nav ul li {
 }
 
 nav ul li.active {
-  background-color: rgba(0, 0, 0, 0.1);
+  /*background-color: rgba(0, 0, 0, 0.1);*/
+  background-color: #190061;
 }
 
 nav ul a {
@@ -4972,7 +5004,7 @@ small {
   overflow-y: hidden;
   height: 48px;
   width: 100%;
-  background-color: #fff;
+  background-color: #282828;
   margin: 0 auto;
   white-space: nowrap;
 }
@@ -5019,7 +5051,7 @@ small {
 }
 
 .tabs .tab a {
-  color: rgba(238, 110, 115, 0.7);
+  color: rgba(255, 255, 255, 0.5);
   display: block;
   width: 100%;
   height: 100%;
@@ -5032,20 +5064,21 @@ small {
 
 .tabs .tab a:hover, .tabs .tab a.active {
   background-color: transparent;
-  color: #ee6e73;
+  /*color: #ee6e73;*/
+  color: #fff;
 }
 
 .tabs .tab.disabled a,
 .tabs .tab.disabled a:hover {
-  color: rgba(238, 110, 115, 0.7);
+  color: rgba(255, 255, 255, 0.7);
   cursor: default;
 }
 
 .tabs .indicator {
   position: absolute;
   bottom: 0;
-  height: 2px;
-  background-color: #f6b2b5;
+  height: 3px;
+  background-color: #3500D3;
   will-change: left, right;
 }
 
@@ -5548,6 +5581,10 @@ button.btn-floating {
   background-color: rgba(0, 150, 136, 0.7);
 }
 
+.waves-effect.waves-blue .waves-ripple {
+	background-color: rgba(61,0,237,0.7);
+}
+
 .waves-effect input[type="button"], .waves-effect input[type="reset"], .waves-effect input[type="submit"] {
   border: 0;
   font-style: normal;
@@ -5747,7 +5784,7 @@ button.btn-floating {
 
 .side-nav .collapsible-header:hover,
 .side-nav.fixed .collapsible-header:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .side-nav .collapsible-header i,
@@ -5758,7 +5795,7 @@ button.btn-floating {
 .side-nav .collapsible-body,
 .side-nav.fixed .collapsible-body {
   border: 0;
-  background-color: #fff;
+  background-color: #282828;
 }
 
 .side-nav .collapsible-body li a,
@@ -7171,7 +7208,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .side-nav {
   position: fixed;
-  width: 300px;
+  width: 180px;
   left: 0;
   top: 0;
   margin: 0;
@@ -7181,7 +7218,7 @@ input[type=range]:focus::-ms-fill-upper {
   height: calc(100% + 60px);
   height: -moz-calc(100%);
   padding-bottom: 60px;
-  background-color: #fff;
+  background-color: #282828;
   z-index: 999;
   overflow-y: auto;
   will-change: transform;
@@ -7210,11 +7247,13 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .side-nav li.active {
-  background-color: rgba(0, 0, 0, 0.05);
+  /*background-color: rgba(0, 0, 0, 0.05);*/
+  background-color: #3500D3;
 }
 
 .side-nav li > a {
-  color: rgba(0, 0, 0, 0.87);
+  /*color: rgba(0, 0, 0, 0.87);*/
+  color: #ffffff;
   display: block;
   font-size: 14px;
   font-weight: 500;
@@ -7224,7 +7263,8 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .side-nav li > a:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  /*background-color: rgba(0, 0, 0, 0.05);*/
+  background-color: rgba(0,0,0,0.2);
 }
 
 .side-nav li > a.btn, .side-nav li > a.btn-large, .side-nav li > a.btn-large, .side-nav li > a.btn-flat, .side-nav li > a.btn-floating {
@@ -7377,7 +7417,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .side-nav .collapsible-body > ul:not(.collapsible) > li.active,
 .side-nav.fixed .collapsible-body > ul:not(.collapsible) > li.active {
-  background-color: #ee6e73;
+  background-color: #3500D3;
 }
 
 .side-nav .collapsible-body > ul:not(.collapsible) > li.active a,
