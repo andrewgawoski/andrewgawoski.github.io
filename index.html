@@ -1,139 +1,492 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Andrew Gawoski - Game Developer</title>
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
-</head>
-<body>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Above tags important -->
 	
-	<header>
-		
-		<nav class="top-nav">
-			<div class="container" style="vertical-align:center;text-align:center;font-size:2.4rem;font-weight:400;">
-				<div style="font-style:italic;padding-left:180px;">Andrew Gawoski</div>
-			</div>
-		</nav>
+    <title>Andrew Gawoski</title>
+
 	
-		<ul id="nav-mobile" class="side-nav fixed" style="transform: translateX(0%);">
-			<li>
-				<img class="responsive-img" src="./images/personalLogo.png">
-			</li>
-			
-			
-			<li class="no-padding">
-				<ul class="collapsible collapsible-accordion">
-					
-					<li class="bold">
-					<a class="waves-effect waves-blue" href="./index.html">Home</a>
-					</li>
-					
-					<li class="bold">
-					<a class="collapsible-header waves-effect waves-blue" style="padding-left:2em;">&nbsp;Projects</a>
-						<div class="collapsible-body" style="display: none;">
-							<ul>
-								<li>
-									<a href="./projects/2018.html" class="waves-effect waves-blue" style="padding-left:4em;">2018</a>
-								</li>
-								<li>
-									<a href="#" class="waves-effect waves-blue" style="padding-left:4em;">2017</a>
-								</li>
-								<li>
-									<a href="#" class="waves-effect waves-blue" style="padding-left:4em;">2016</a>
-								</li>
-								<li>
-									<a href="#" class="waves-effect waves-blue" style="padding-left:4em;">2015</a>
-								</li>
-								<li>
-									<a href="#" class="waves-effect waves-blue" style="padding-left:4em;">2014</a>
-								</li>
-							</ul>
-						</div>
-					</li>
-					
-					<li class="bold">
-					<a class="waves-effect waves-blue" href="./about.html">About</a>
-					</li>
-					
-					<!--
-					<li class="bold">
-						<a class="collapsible-header waves-effect waves-blue" style="padding-left:2em;">&nbsp;Blog</a>
-						<div class="collapsible-body" style="display: none;">
-							<ul>
-								<li>
-									<a href="#" class="waves-effect waves-blue" style="padding-left:4em;">2018</a>
-								</li>
-								<li>
-									<a href="#" class="waves-effect waves-blue" style="padding-left:4em;">2017</a>
-								</li>
-							</ul>
-						</div>
-					</li>
-					-->
-					
-					<li class="bold">
-					<div style="color:#fff;opacity:0.2;padding-left:2em;">Blog</div>
-					</li>
-					
-					<li class="bold">
-					<a class="waves-effect waves-blue" href="./contact.html">Contact</a>
-					</li>
-					
-				</ul>
-			</li>
-			
-			
-		</ul>
-	</header>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 	
-	<!-- MAIN PAGE CONTENT HERE -->
-	<main>
+	<link href="css/agCustom.css" rel="stylesheet">
+	
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+  </head>
+  
+  
+  <body>
+  
+	<!-- Fixed navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
-			
-			<div class="row" style="padding-left:180px;padding-top:4em">
-				<div class="col s12" style="text-align:center">
-					<p style="font-size:1.5em">I'm <b style="color:#3500D3">Andrew</b>, a designer, programmer, and game developer.</p>
-				</div>
+		
+			<div class="navbar=header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand">Andrew Gawoski</a>
 			</div>
-			<div class="row" style="padding-left:180px;">
-				<div class="col s0 m2 l3">
-				</div>
-				<div class="col s12 m8 l6">
-					<p>Welcome to my <s>amazing</s> <b>humble</b> website.</p>
-					<p>From the site's navigation menu, you can find information <a href="./about.html">about me</a> and the <a href="./projects/2018.html">projects</a> I've worked on.</p>
-					<p>Hopefully, this <s>clean</s> <b>simple</b> landing page will lead to other <s>incredible</s> <b>informative</b> pages.</p>
-					<p>-Andrew</p>
-				</div>
+			
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="#about">About</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+			
+		</div>
+	</nav>
+	
+	
+	
+	<!-- About Container -->
+	<div class="container" style="padding-top:5em">
+		
+		<div class="row" id="about">
+			<div class="col-md-12">
+			<h3>About</h3>
+				
 			</div>
 		</div>
-	</main>
-	<!-- END MAIN PAGE CONTENT -->
-	
-	<footer class="page-footer">
-		<div class="footer-copyright">
-			<div class="container" style="padding-left:180px;text-align:center">
-				&copy; 2018 Andrew Gawoski
+		
+		<div class="bgparallax-3"></div>
+		<div height="0.5em">&nbsp;</div>
+		
+		<div class="row">
+		
+			<div class="col-md-2">
+				<ul class="nav nav-pills nav-stacked">
+					<li role="presentation" class="active"><a href="#aboutWelcome" role="tab" data-toggle="tab">Welcome</a></li>
+					<li role="presentation"><a href="#aboutProfessional" role="tab" data-toggle="tab">Professional</a></li>
+					<li role="presentation"><a href="#aboutCasual" role="tab" data-toggle="tab">Casual</a></li>
+					<li role="presentation"><a href="#aboutProjects" role="tab" data-toggle="tab">About My Projects</a></li>
+				</ul>
 			</div>
+			
+			<div class="col-md-10">
+				<div class="tab-content">
+				
+					<div role="tabpanel" class="tab-pane fade in active" id="aboutWelcome">
+						<div class="row">
+							<div class="col-md-8 agBody">
+								<p class="textSpaced">&emsp;Hello, I'm Andrew&mdash;<br>A long journey has brought you here, just as my own has led to the creation of games.<br>I appreciate your interest in my work.<br><span style="padding-left:8em;">Please enjoy your visit.</span></p>
+							</div>
+							<div class="col-md-4">
+								<img width="100%" class="img-responsive" src="img/headshotFull.jpg" alt="Welcoming-looking photo">
+							</div>
+						</div>
+					</div>
+				
+					<div role="tabpanel" class="tab-pane fade" id="aboutProfessional">
+						<div class="row">
+							<div class="col-md-8 agBody">
+								<p class="textSpaced">&emsp;I've been creating digital games for the better part of the last decade, and have a history of designing tabletop games stretching back nearly twice as long to when I was much younger. Over the years I've had to fill many many unique roles and learn different skillsets, so I pride myself on being able to communicate clearly and establish understanding with just about anyone.</p>
+								<p class="textSpaced">&emsp;I recognize that the key to reaching that understanding is learning. So, while I could explain my approach to top-down and bottom-up design or my solid technical background, it's much more important to communicate just how much I love learning. I have a ravenous curiosity and in-depth research completely drives many of my designs. I am at my best when I'm discovering, solving, and approaching new challenges.</p>
+							</div>
+							<div class="col-md-4">
+								<img width="100%" class="img-responsive" src="img/headshotFull.jpg" alt="Professional-looking photo">
+							</div>
+						</div>
+					</div>
+					
+					<div role="tabpanel" class="tab-pane fade" id="aboutCasual">
+						<div class="row">
+							<div class="col-md-8 agBody">
+								<p class="textSpaced">&emsp;Where to begin? I graduated from the lovely, densely-forested University of California Santa Cruz, receiving a wonderful piece of paper with "Bachelor of Science" and "Computer Science: Computer Game Design" on it. It was definitely a time filled with some strong experiences.</p>
+								<p class="textSpaced">&emsp;I prefer tea to coffee, play tennis, watch baseball, and enjoy cooking recreationally. When I'm comfortable, you'll see me making just about as many jokes as I see opportunities for them, a sense of humor keenly honed by my pun-loving friend group growing up and the finest of stand up comedy specials.</p>
+								<p class="textSpaced">&emsp;As a game developer, and particularly a designer, I've played an incredible number of games. The only genre I don't particularly enjoy is fighting games, but I can understand why other folks like them. I love talking about design, admittedly with the hopes of a very critical but nuanced and open-ended discussion. Recently, I've been playing a lot of Monster Hunter World, a fantastic cooperative title that I highly recommend, but I'm a little burnt out from. I've also been playing a handful of other titles from a large assortment of different genres, some old, some new, some physical, and some digital.</p>
+							</div>
+							<div class="col-md-4">
+								<img width="100%" class="img-responsive" src="img/headshotFull.jpg" alt="Casual-looking photo">
+							</div>
+						</div>
+					</div>
+					
+					<div role="tabpanel" class="tab-pane fade" id="aboutProjects">
+						<div class="row">
+							<div class="col-md-8 agBody">
+								<p class="textSpaced">&emsp;I've included several prototypes among my projects in various states of completion. I value the work I've done: heavy design documentation and proof/implementation of core mechanics. I've been fortunate to learn more with every challenge, often carrying those improvements into the next project I work on.</p>
+								<p class="textSpaced">&emsp;If you would like to see in-depth design work, I recommend checking out the documentation for <i>Dawnflower Labyrinth</i> (2018). I am currently working on <i>A Fistful of Bones</i> (2018), a western-themed stealth puzzle game.</p>
+								<p class="textSpaced">&emsp;I am currently in the process of collecting additional project resources from my past work and modifying this site to include it. This mainly refers to screenshot galleries, but in some cases includes playable prototypes as well.</p>
+							</div>
+							<div class="col-md-4">
+								<img width="100%" class="img-responsive" src="img/headshotFull.jpg" alt="Contemplative-looking photo">
+							</div>
+						</div>
+					</div>
+				
+				</div>
+				
+				
+				
+				
+			</div>
+		</div>
+		
+	</div><!-- End about container -->
+	
+	
+	
+	<!-- Projects Container -->
+	<div class="container">
+		
+		<div class="row" id="projects">
+			<div class="col-md-12">
+				<h3>Projects</h3>
+			</div>
+		</div>
+		
+		<div class="bgparallax-3"></div>
+		<div height="0.5em">&nbsp;</div>
+		
+		<div class="row">
+		
+			<!-- Year Tabs -->
+			<div class="col-md-2">
+				<ul class="nav nav-pills nav-stacked">
+					<li role="presentation" class="active"><a href="#year2018" role="tab" data-toggle="tab">2018</a></li>
+					<li role="presentation"><a href="#year2017" role="tab" data-toggle="tab">2017</a></li>
+					<li role="presentation"><a href="#year2016" role="tab" data-toggle="tab">2016</a></li>
+					<li role="presentation"><a href="#year2015" role="tab" data-toggle="tab">2015</a></li>
+					<li role="presentation"><a href="#year2014" role="tab" data-toggle="tab">2014</a></li>
+				</ul>
+			</div>
+			
+			<!-- Main project content -->
+			<div class="col-md-10">
+				<div class="tab-content">
+				
+					<!-- 2018 Projects -->
+					<div role="tabpanel" class="tab-pane fade in active" id="year2018">
+					
+						<div class="row">
+						
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<div class="thumbnail">
+									<img src="img/fistfulThumb.jpg" width="100%" alt="Splash picture of X and a gallery of images from X">
+									<div class="caption">
+										<h4>A Fistful of Bones</h4>
+										<p>Created with UE4, a trickster skeleton seeks revenge, recovers stolen bones and roles like a tumbleweed in this Western-inspired stealth puzzle game.</p>
+										<p>
+											<a href="resources/fobEarlyGDD.pdf" class="btn btn-primary role="button">Early GDD</a>
+											<a href="" class="disabled btn btn-primary role="button">Gallery</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<div class="thumbnail">
+									<img src="img/dawnflowerThumb.jpg" width="100%" alt="Splash picture of X and a gallery of images from X">
+									<div class="caption">
+										<h4>Dawnflower Labyrinth</h4>
+										<p>A UE4 farm-life simulation RPG that attempts to improve the genre's player progression issues through tracking desires and goals.</p>
+										<p>
+											<a href="resources/dawnflowerGDD.pdf" class="btn btn-primary role="button">Early GDD</a>
+											<a href="resources/dawnflowerSaveUX.pdf" class="btn btn-primary role="button">UX Research</a>
+											<a href="resources/dawnflower-Crops.xlsx" class="btn btn-primary role="button">Crop Spreadsheet</a>
+											<a href="" class="disabled btn btn-primary role="button">Gallery</a>										
+										</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-4 col-sm-6 col-xs-12">
+							
+							</div>
+						</div>
+					</div>
+					
+					<!-- 2017 Projects -->
+					<div role="tabpanel" class="tab-pane fade" id="year2017">
+						
+						<div class="row">
+						
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<div class="thumbnail">
+									<img src="img/ascengineThumb.jpg" width="100%" alt="Splash picture of X and a gallery of images from X">
+									<div class="caption">
+										<h4>Ascengine</h4>
+										<p>A dual stick zero gravity racing prototype developed with UE4. Ascengine explores high speed racing when controlling two rotating engines independently.</p>
+										<p>
+											<a href="resources/ascengineGDD.pdf" class="btn btn-primary role="button">Tech Notes 1</a>
+											<a href="resources/ascengineOldNotes.pdf" class="btn btn-primary role="button">Tech Notes 2</a>
+											<a href="" class="disabled btn btn-primary role="button">Gallery</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<!--
+								<div class="thumbnail">
+									<img src="img/markdownThumb.jpg" width="100%" alt="Splash picture of X and a gallery of images from X">
+									<div class="caption">
+										<h4>Markdown Parser</h4>
+										<p>lorem ipsum</p>
+										<p>
+											<a href="#" class="btn btn-primary role="button">Button</a>
+											<a href="#" class="btn btn-primary role="button">Button</a>
+										</p>
+									</div>
+								</div>
+								-->
+							</div>
+							
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								
+								<!--
+								<div class="thumbnail">
+									<img src="img/240x200.jpg" width="100%" alt="Splash picture of X and a gallery of images from X">
+									<div class="caption">
+										<h4>Mining PCG</h4>
+										<p>lorem ipsum</p>
+										<p>
+											<a href="#" class="btn btn-primary role="button">Button</a>
+											<a href="#" class="btn btn-primary role="button">Button</a>
+										</p>
+									</div>
+								</div>
+								-->
+								
+							</div>
+							
+						</div>
+						
+					</div>
+					
+					<!-- 2016 Projects -->
+					<div role="tabpanel" class="tab-pane fade" id="year2016">
+						
+						<div class="row">
+						
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<div class="thumbnail">
+									<img src="img/perdixThumb.jpg" width="100%" alt="Splash picture of X and a gallery of images from X">
+									<div class="caption">
+										<h4>Perdix</h4>
+										<p>A stylish 2D action-platformer where players battle through the world with a wind deity's aid to return the sun to the sky. It was developed primarily in C# and targeted gamepad or console usage.</p>
+										<p>
+											<a href="resources/perdixGDD.pdf" class="btn btn-primary role="button">Early GDD</a>
+											<a href="resources/WindControllerScript.cs" class="btn btn-primary role="button">Wind Script</a>
+											<a href="resources/WaveMotionScript.cs" class="btn btn-primary role="button">Wave Script</a>
+											<a href="resources/TestShader.shader" class="btn btn-primary role="button">Unmoving Shader</a>
+											<a href="resources/PerdixWebsiteBuild.zip" class="btn btn-primary role="button">Playable</a>
+											<a href="" class="disabled btn btn-primary role="button">Gallery</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<div class="thumbnail">
+									<img src="img/lunaThumb.jpg" width="100%" alt="Splash picture of X and a gallery of images from X">
+									<div class="caption">
+										<h4>Luna Limit</h4>
+										<p>A single player tile-based game with a strong math influenced developed with Unity. Players aim to create as many full moons as possible by flipping tiles and adding moon phases.</p>
+										<p>
+											<a href="https://github.com/andrewgawoski/luna-limit" class="btn btn-primary role="button">Repository</a>
+											<a href="" class="disabled btn btn-primary role="button">Playable</a>
+											<a href="" class="disabled btn btn-primary role="button">Gallery</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<div class="thumbnail">
+									<img src="img/summonerThumb.jpg" width="100%" alt="Splash picture of X and a gallery of images from X">
+									<div class="caption">
+										<h4>Summoner Timers</h4>
+										<p>A native android application and player assistant for the popular game League of Legends. Summoner Timers automatically populates timers that track various ingame abilities by calling Riot Games' API.</p>
+										<p>
+											<a href="https://github.com/andrewgawoski/ag-summoner-timers" class="btn btn-primary role="button">Repository</a>
+											<a href="https://developer.riotgames.com/" class="btn btn-primary role="button">Riot API</a>
+											<a href="" class="disabled btn btn-primary role="button">Gallery</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						
+					</div>
+					
+					<!-- 2015 Projects -->
+					<div role="tabpanel" class="tab-pane fade" id="year2015">
+						
+						<div class="row">
+						
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<div class="thumbnail">
+									<img src="img/slvThumb.jpg" width="100%" alt="Splash picture of X and a gallery of images from X">
+									<div class="caption">
+										<h4>Say La Vie</h4>
+										<p>An educational French-learning game developed in a mid-sized team with UE4 as part of the senior capstone course at UCSC. Players travel to the past to learn words from the French language. The game features voice-acted character dialogue provided by native speakers.</p>
+										<p>								
+											<!--<a href="#" class="btn btn-primary role="button">Button</a>
+											<a href="#" class="btn btn-primary role="button">Button</a>-->
+											<a href="" class="disabled btn btn-primary role="button">Gallery</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<div class="thumbnail">
+									<img src="img/killswitchThumb.jpg" width="100%" alt="Splash picture of X and a gallery of images from X">
+									<div class="caption">
+										<h4>Kill Switch:Engage</h4>
+										<p>Developed for Global Game Jam 2015 (Theme: What do we do now?), KS:E has top-down shooter players constantly improvising as the control scheme and scoring rules change periodically.</p>
+										<p>
+											<a href="https://globalgamejam.org/2015/games/kill-switch-engage" class="btn btn-primary role="button">GGJ 2015</a>
+											<a href="https://ggj.s3.amazonaws.com/games/2015/01/25/1642/killswitch_engage.zip" class="btn btn-primary role="button">Playable</a>
+											<a href="" class="disabled btn btn-primary role="button">Gallery</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<div class="thumbnail">
+									<img src="img/substilootThumb.jpg" width="100%" alt="Splash picture of X and a gallery of images from X">
+									<div class="caption">
+										<h4>SubstiLoot</h4>
+										<p>Developed as a pair for the <i>Interactive Narrative</i> course at UCSC using Inform 7. Players control two characters by changing perspectives between the two (swap) in order to explore a puzzle and treasure filled ruin.</p>
+										<p>
+											<!--<a href="#" class="btn btn-primary role="button">Button</a>-->
+											<a href="resources/InformGame/index.html" class="btn btn-primary role="button">Playable (Browser)</a>
+											<a href="" class="disabled btn btn-primary role="button">Gallery</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						
+					</div>
+					
+					<!-- 2014 Projects -->
+					<div role="tabpanel" class="tab-pane fade" id="year2014">
+						
+						<div class="row">
+						
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<div class="thumbnail">
+									<img src="img/qinsThumb.jpg" width="100%" alt="Splash picture of X and a gallery of images from X">
+									<div class="caption">
+										<h4>Qin's Conquest</h4>
+										<p>Information coming soon!</p>
+										<p>
+											<!--<a href="#" class="btn btn-primary role="button">Button</a>
+											<a href="#" class="btn btn-primary role="button">Button</a>-->
+										</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<div class="thumbnail">
+									<img src="img/asteroidThumb.jpg" width="100%" alt="Splash picture of X and a gallery of images from X">
+									<div class="caption">
+										<h4>Asteroid 3D</h4>
+										<p>Information coming soon!</p>
+										<p>
+											<!--<a href="#" class="btn btn-primary role="button">Button</a>
+											<a href="#" class="btn btn-primary role="button">Button</a>-->
+											
+										</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<div class="thumbnail">
+									<img src="img/beatrixThumb.jpg" width="100%" alt="Splash picture of X and a gallery of images from X">
+									<div class="caption">
+										<h4>The Chronicles <small>of the Archwizard Beatrix XII,<small>Episode 8: <small>Fortnight of the <small>Hundred-Thousand Slimes</small></small></small></small></h4>
+										<p>Information coming soon!</p>
+										<p>
+											<!--<a href="#" class="btn btn-primary role="button">Button</a>
+											<a href="#" class="btn btn-primary role="button">Button</a>-->
+										</p>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+	</div><!-- End projects contaner -->
+	
+	
+	<!-- Contact Container -->
+	<div class="container">
+	
+		<div class="row" id="contact">
+			<div class="col-md-12">
+				<h3>Contact</h3>
+			</div>
+		</div>
+		
+		<div class="bgparallax-3"></div>
+		<div height="0.5em">&nbsp;</div>
+	
+		<div class="row" style="padding-bottom:2em">
+			<div class="col-md-2">
+				<ul class="nav nav-pills nav-stacked">
+					<li role="presentation" class="active"><a href="https://www.linkedin.com/in/andrewgawoski/">Linkedin</a></li>
+					<li role="presentation" class="active"><a href="https://github.com/andrewgawoski">GitHub</a></li>
+					<!--
+					<li role="presentation" class="active"><a href="#">This Space Intentionally Left Blank</a></li>
+					<li role="presentation" class="active"><a href="#">This Space Intentionally Left Blank</a></li>
+					<li role="presentation" class="active"><a href="#">This Space Intentionally Left Blank</a></li>
+					-->
+				</ul>
+			</div>
+			<div class="col-md-10 agBody">
+				<p class="textSpaced">&emsp;I'm not active on social media, so I can be difficult to reach. While I'm considering expanding my online presence in the future, currently email is the best method of contacting me. However, if you're contacting me for the first time I recommend using linkedin- I shouldn't be difficult to find.</p>
+			</div>
+		</div>
+	</div>
+	
+	<!--
+	<div class="bgparallax-2"></div>
+	-->
+	
+	<footer>
+		<div class="container" style="padding:0.3em;">
+			<div style="text-align:right;opacity:0.5;">&copy;2018 Andrew Gawoski</div>
 		</div>
 	</footer>
+	
 
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="./js/materialize.js"></script>
-  <script src="./js/init.js"></script>
-  <script>
-        $(document).ready(function () {
-            $('.carousel').carousel();
-            $('.carousel.carousel-slider').carousel({ fullWidth: true });
-        });
-  </script>
-
-</body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+  
+  
 </html>
